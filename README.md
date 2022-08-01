@@ -53,6 +53,13 @@
     brew install --cask vox
     ```
 
+* Install my mouse software
+    ```sh
+    brew install --cask homebrew/cask-drivers/logi-options-plus
+	# Currently, this needs the installer to be run manually:
+	open /opt/homebrew/Caskroom/logi-options-plus/latest/logioptionsplus_installer.app
+	```
+
 * Setup GitHub ssh keys
 
 * Install Sourcetree's `stree` command
