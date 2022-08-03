@@ -104,6 +104,9 @@
     set -gx PATH "$HOME/.cargo/bin" $PATH
     ```
 
+    Note: I don't install Rust with Asdf because Rustup can already do everything I need.
+    And thanks to Editions, I see no point in having anything but the latest version of Rust.
+
 ## Elixir
 
     ```sh
