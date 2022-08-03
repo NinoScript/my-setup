@@ -94,51 +94,51 @@
 
 ## Rust
 
-    ```sh
-    brew install rustup
+```sh
+brew install rustup
 
-    # Enable tab completion
-    mkdir -p ~/.config/fish/completions
-    rustup completions fish > ~/.config/fish/completions/rustup.fish
-    ```
+# Enable tab completion
+mkdir -p ~/.config/fish/completions
+rustup completions fish > ~/.config/fish/completions/rustup.fish
+```
 
-    In `~/.config/fish/config.fish` add:
-    ```sh
-    # Rust
-    set -gx PATH "$HOME/.cargo/bin" $PATH
-    ```
+In `~/.config/fish/config.fish` add:
+```sh
+# Rust
+set -gx PATH "$HOME/.cargo/bin" $PATH
+```
 
-    Note: I don't install Rust with Asdf because Rustup can already do everything I need.
-    And thanks to Editions, I see no point in having anything but the latest version of Rust.
+Note: I don't install Rust with Asdf because Rustup can already do everything I need.
+And thanks to Editions, I see no point in having anything but the latest version of Rust.
 
 ## Elixir
 
-    ```sh
-    # erlang
-    asdf plugin-add erlang
-    asdf install erlang latest
-    asdf global erlang latest
+```sh
+# erlang
+asdf plugin-add erlang
+asdf install erlang latest
+asdf global erlang latest
 
-    # elixir
-    asdf plugin-add elixir
-    asdf install elixir latest
-    asdf global elixir latest
-    ```
+# elixir
+asdf plugin-add elixir
+asdf install elixir latest
+asdf global elixir latest
+```
 
 ## TypeScript
 
-    ```sh
-    # npm
-    asdf plugin-add nodejs
-    asdf install nodejs latest
-    asdf global nodejs latest
+```sh
+# npm
+asdf plugin-add nodejs
+asdf install nodejs latest
+asdf global nodejs latest
 
-    # yarn
-    asdf plugin-add yarn
-    brew install gpg
-    asdf install yarn latest
-    asdf global yarn latest
-    ```
+# yarn
+asdf plugin-add yarn
+brew install gpg
+asdf install yarn latest
+asdf global yarn latest
+```
 
 # Maintenance
 
