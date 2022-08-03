@@ -96,6 +96,10 @@
 
     ```sh
     brew install rustup
+
+    # Enable tab completion
+    mkdir -p ~/.config/fish/completions
+    rustup completions fish > ~/.config/fish/completions/rustup.fish
     ```
 
     In `~/.config/fish/config.fish` add:
