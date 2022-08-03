@@ -77,6 +77,19 @@
 
     * Shell Command: Install 'code' command in PATH
 
+* Install Asdf (Version Manager)
+
+    ```sh
+    brew install asdf
+    ```
+
+    In `~/.config/fish/config.fish` add:
+    ```sh
+    # Asdf (Version Manager)
+    # output of: echo -e "source "(brew --prefix asdf)"/libexec/asdf.fish"
+    source /opt/homebrew/opt/asdf/libexec/asdf.fish
+    ```
+
 # Setup Development Environment
 
 ## Rust
@@ -89,6 +102,35 @@
     ```sh
     # Rust
     set -gx PATH "$HOME/.cargo/bin" $PATH
+    ```
+
+## Elixir
+
+    ```sh
+    # erlang
+    asdf plugin-add erlang
+    asdf install erlang latest
+    asdf global erlang latest
+
+    # elixir
+    asdf plugin-add elixir
+    asdf install elixir latest
+    asdf global elixir latest
+    ```
+
+## TypeScript
+
+    ```sh
+    # npm
+    asdf plugin-add nodejs
+    asdf install nodejs latest
+    asdf global nodejs latest
+
+    # yarn
+    asdf plugin-add yarn
+    brew install gpg
+    asdf install yarn latest
+    asdf global yarn latest
     ```
 
 # Maintenance
