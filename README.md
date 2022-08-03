@@ -1,6 +1,6 @@
 # Initial Setup
 
-* Install Homebrew
+* Install Homebrew (Package Manager)
 
     ```sh
     # Get this from `https://brew.sh/`
@@ -10,7 +10,7 @@
     brew doctor
     ```
 
-* Install Fish, my favorite shell
+* Install Fish (Shell)
 
     ```sh
     brew install fish
@@ -20,10 +20,12 @@
 
     In `~/.config/fish/config.fish` add:
     ```sh
+    # Homebrew (Package Manager)
+    # output of: echo eval "\$($(brew --prefix)/bin/brew shellenv)"
     eval "$(/opt/homebrew/bin/brew shellenv)"
     ```
 
-* Install iTerm2, my favorite terminal emulator
+* Install iTerm2 (Terminal Emulator)
 
     ```sh
     brew install --cask iterm2
@@ -75,7 +77,9 @@
 
     * Shell Command: Install 'code' command in PATH
 
-* Install Rust
+# Setup Development Environment
+
+## Rust
 
     ```sh
     brew install rustup
@@ -83,6 +87,7 @@
 
     In `~/.config/fish/config.fish` add:
     ```sh
+    # Rust
     set -gx PATH "$HOME/.cargo/bin" $PATH
     ```
 
