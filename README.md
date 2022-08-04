@@ -14,8 +14,8 @@
 
     ```sh
     brew install fish
-    echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
-    chsh -s /opt/homebrew/bin/fish
+    echo (brew --prefix fish) | sudo tee -a /etc/shells
+    chsh -s (brew --prefix fish)
     ```
 
     In `~/.config/fish/config.fish` add:
@@ -59,7 +59,7 @@
     ```sh
     brew install --cask homebrew/cask-drivers/logi-options-plus
 	# Currently, this needs the installer to be run manually:
-	open /opt/homebrew/Caskroom/logi-options-plus/latest/logioptionsplus_installer.app
+	open (brew --prefix)/Caskroom/logi-options-plus/latest/logioptionsplus_installer.app
 	```
 
 * Setup GitHub ssh keys
