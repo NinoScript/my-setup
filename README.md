@@ -135,6 +135,14 @@ asdf install yarn latest
 asdf global yarn latest
 ```
 
+## Go
+
+```sh
+asdf plugin-add golang
+asdf install golang latest
+asdf global golang latest
+```
+
 # Maintenance
 
 ```sh
