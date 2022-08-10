@@ -120,6 +120,16 @@ asdf install elixir latest
 asdf global elixir latest
 ```
 
+### Testing
+
+Elixir does not directly have a way to watch the filesystem and run tests.
+But it provides a way to restart tests by listening on stdin.
+
+```sh
+brew install fswatch
+fswatch lib test | mix test --stale --listen-on-stdin
+```
+
 ## TypeScript
 
 ```sh
